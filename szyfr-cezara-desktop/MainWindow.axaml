@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="1000" Height="650"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False"
+        x:Class="szyfr_cezara_desktop.MainWindow"
+        Title="Szyfrowanie - wykonane przez 000000000"
+        Background="CadetBlue"
+        >
+    <Grid ColumnDefinitions="* * *" Margin="10">
+        <Grid RowDefinitions="* * * *">
+            <TextBlock Text="Podaj wartość klucza" Foreground="AntiqueWhite"/>
+            <TextBox Grid.Row="1" Height="10" Width="30"/>
+            <TextBlock Grid.Row="2" Text="Podaj tekst" Foreground="AntiqueWhite"/>
+            <TextBox Grid.Row="3"/>
+            <!-- dziwny element -->
+        </Grid>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <Button Content="Zaszyfruj" Background="LightBlue"/>
+        </StackPanel>
+        <Grid Grid.Column="2" RowDefinitions="* * *">
+            <TextBlock Text="Tekst zaszyfrowany" Foreground="AntiqueWhite"/>
+            <Border Grid.Row="1" BorderBrush="AntiqueWhite" BorderThickness="2" CornerRadius="10">
+                <TextBlock Text="askdjaskld"/>
+            </Border>
+            <Button Grid.Row="2" Content="Zapisz szyfr w pliku" Background="LightBlue"/>
+        </Grid>
+    </Grid>
+</Window>
