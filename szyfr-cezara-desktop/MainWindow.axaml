@@ -10,23 +10,24 @@
         Title="Szyfrowanie - wykonane przez 000000000"
         Background="CadetBlue"
         >
-    <Grid ColumnDefinitions="* * *" Margin="10">
-        <Grid RowDefinitions="* * * *">
-            <TextBlock Text="Podaj wartość klucza" Foreground="AntiqueWhite"/>
-            <TextBox Grid.Row="1" Height="10" Width="30"/>
-            <TextBlock Grid.Row="2" Text="Podaj tekst" Foreground="AntiqueWhite"/>
-            <TextBox Grid.Row="3"/>
-            <!-- dziwny element -->
+    <Grid ColumnDefinitions="2* * 2*" Margin="20">
+        <Grid RowDefinitions="1* 2* 1* 7*">
+            <TextBlock Text="Podaj wartość klucza" Foreground="AntiqueWhite" FontSize="18" Margin="0 10 0 0"/>
+            <TextBox Grid.Row="1" Height="10" Width="30" Background="White" Name="CipherKeyTextBox"/>
+            <TextBlock Grid.Row="2" Text="Podaj tekst" Foreground="AntiqueWhite" FontSize="18" />
+            <TextBox Grid.Row="3" Background="White" TextWrapping="Wrap" Name="TextToBeEncryptedTextBox"/>
         </Grid>
-        <StackPanel Grid.Column="1" VerticalAlignment="Center">
-            <Button Content="Zaszyfruj" Background="LightBlue"/>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Zaszyfruj" Click="EncryptTextButtonOnClick" Background="LightBlue" Margin="0 75 0 0"/>
         </StackPanel>
-        <Grid Grid.Column="2" RowDefinitions="* * *">
-            <TextBlock Text="Tekst zaszyfrowany" Foreground="AntiqueWhite"/>
+        <Grid Grid.Column="2" RowDefinitions="15* 70* 15*">
+            <TextBlock Text="Tekst zaszyfrowany" Foreground="AntiqueWhite" FontSize="18" Margin="0 10 0 0"/>
             <Border Grid.Row="1" BorderBrush="AntiqueWhite" BorderThickness="2" CornerRadius="10">
-                <TextBlock Text="askdjaskld"/>
+                <TextBlock Text="tu bedzie zaszyfrowany tekst" Name="ResultTextBlock"/>
             </Border>
-            <Button Grid.Row="2" Content="Zapisz szyfr w pliku" Background="LightBlue"/>
+            <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="Zapisz szyfr w pliku" Background="LightBlue" Width="175" Margin="0 35 0 0" HorizontalContentAlignment="Center"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

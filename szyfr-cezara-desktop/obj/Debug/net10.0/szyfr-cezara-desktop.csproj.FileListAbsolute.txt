@@ -89,3 +89,4 @@
 /home/ignacy/RiderProjects/szyfr-cezara-desktop/szyfr-cezara-desktop/obj/Debug/net10.0/szyfr-cezara-desktop.pdb
 /home/ignacy/RiderProjects/szyfr-cezara-desktop/szyfr-cezara-desktop/obj/Debug/net10.0/szyfr-cezara-desktop.genruntimeconfig.cache
 /home/ignacy/RiderProjects/szyfr-cezara-desktop/szyfr-cezara-desktop/obj/Debug/net10.0/ref/szyfr-cezara-desktop.dll
+/home/ignacy/RiderProjects/szyfr-cezara-desktop/szyfr-cezara-desktop/obj/Debug/net10.0/szyfr-cezara-desktop.sourcelink.json

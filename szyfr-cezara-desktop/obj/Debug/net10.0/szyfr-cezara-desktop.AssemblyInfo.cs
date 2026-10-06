@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("szyfr-cezara-desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b53ea26c8a4acebb5dd3b21e072bd68744fa037e")]
 [assembly: System.Reflection.AssemblyProductAttribute("szyfr-cezara-desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("szyfr-cezara-desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
